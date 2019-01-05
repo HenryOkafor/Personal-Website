@@ -2,7 +2,7 @@
   <div class="container">
     <div class="heading">
       <div class="logo">
-        <object data="/logo.svg" type="image/svg+xml"></object>
+        <nuxt-link to="/"><img src="/logo.svg"></nuxt-link>
       </div>
       <h1 class="title">Terms and Conditions</h1>
     </div>
@@ -106,7 +106,10 @@
 
 <script>
 export default {
-  layout: "default"
+  layout: "default",
+  head: () => ({
+    title: 'Terms and Conditions - Henry Okafor'
+  })
 };
 </script>
 
@@ -119,7 +122,8 @@ export default {
     .logo {
       text-align: center;
       margin-bottom: 30px;
-      object {
+      a{display: block;}
+      img {
         width: 80px;
         display: inline-block;
       }
