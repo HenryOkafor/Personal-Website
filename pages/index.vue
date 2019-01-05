@@ -30,7 +30,7 @@
       </div>
     </div>
     <div class="toc">
-      <a href>Terms and Conditions</a>
+      <nuxt-link to="terms-and-conditions">Terms and Conditions</nuxt-link>
     </div>
   </section>
 </template>
@@ -159,7 +159,7 @@ export default {
           font-weight: 300;
         }
         .actions {
-          font-size: 0.7em;
+          font-size: 0.6em;
           .cta {
             border-radius: 3px;
             background: #ea0e68;
