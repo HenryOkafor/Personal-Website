@@ -16,14 +16,22 @@
           human centered digital products with you.
         </p>
         <div class="actions">
-          <button class="btn cta">View Portfolio</button>
-          <a class="btn social" href>
+          <a
+            target="_blank"
+            href="https://drive.google.com/open?id=0BzCcry0qUvrhUGVxdDdaSHN1TnM"
+            class="btn cta"
+          >View Portfolio</a>
+          <a target="_blank" class="btn behance social" href="https://www.behance.net/HernryArts">
             <i class="fab fa-behance-square"></i>
           </a>
-          <a class="btn social" href>
+          <a
+            target="_blank"
+            class="btn linkedin social"
+            href="https://www.linkedin.com/in/henry-okafor-0a82506a/"
+          >
             <i class="fab fa-linkedin"></i>
           </a>
-          <a class="btn social" href>
+          <a target="_blank" class="btn dribbble social" href="https://dribbble.com/henryokafor">
             <i class="fab fa-dribbble-square"></i>
           </a>
         </div>
@@ -42,13 +50,16 @@ export default {
   components: {
     Logo
   },
-  head: ()=>({
-    title: 'Henry Okafor - Graphics designer',
-    meta:[{
-      name: 'description',
-      hid: 'description',
-      content: 'I’m a visually driven creative with a keen eye for details in graphics design, UI design and digital product design, with more than three(3) active years of working experience'
-    }]
+  head: () => ({
+    title: "Henry Okafor - Graphics designer",
+    meta: [
+      {
+        name: "description",
+        hid: "description",
+        content:
+          "I’m a visually driven creative with a keen eye for details in graphics design, UI design and digital product design, with more than three(3) active years of working experience"
+      }
+    ]
   })
 };
 </script>
@@ -65,6 +76,7 @@ export default {
   .right {
     flex: 1 0 50%;
   }
+
   .toc {
     position: absolute;
     bottom: 20px;
@@ -108,11 +120,25 @@ export default {
       }
       .actions {
         .cta {
+          cursor: pointer;
           background: #ea0e68;
           color: white;
           font-size: 1.3em;
           height: 2.5em;
+          display: inline-flex;
+          text-decoration: none;
+          justify-content: center;
+          align-items: center;
           width: 13em;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          transition: box-shadow 0.2s ease-in-out;
+          &:hover {
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+          }
+          &:focus {
+            background: darken($color: #ea0e68, $amount: 10%);
+            outline: none;
+          }
         }
         * {
           vertical-align: bottom;
@@ -123,6 +149,16 @@ export default {
           border-collapse: collapse;
           color: #555;
           display: inline-block;
+          transition: color 0.2s ease-in-out;
+        }
+        .dribbble:hover i {
+          color: #fa398a;
+        }
+        .linkedin:hover {
+          color: #0077ba;
+        }
+        .behance:hover {
+          color: #0057ff;
         }
       }
     }
@@ -189,9 +225,9 @@ export default {
         }
       }
     }
-  .toc a {
-    color: white ;
-  }
+    .toc a {
+      color: white;
+    }
   }
 }
 </style>
