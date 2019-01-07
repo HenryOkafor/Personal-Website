@@ -43,7 +43,12 @@ export default {
     Logo
   },
   head: ()=>({
-    title: 'Henry Okafor - Graphics designer'
+    title: 'Henry Okafor - Graphics designer',
+    meta:[{
+      name: 'description',
+      hid: 'description',
+      content: 'I’m a visually driven creative with a keen eye for details in graphics design, UI design and digital product design, with more than three(3) active years of working experience'
+    }]
   })
 };
 </script>

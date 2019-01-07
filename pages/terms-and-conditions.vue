@@ -108,7 +108,8 @@
 export default {
   layout: "default",
   head: () => ({
-    title: 'Terms and Conditions - Henry Okafor'
+    title: 'Terms and Conditions - Henry Okafor',
+    meta:[{hid: 'description', name: 'description', content: 'I promise that, except for anything that you gave me to incorporate into the design(s): My work will be original and will not be copied in whole or in part from any other work;'}]
   })
 };
 </script>
