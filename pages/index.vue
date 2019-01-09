@@ -9,11 +9,7 @@
         <h1 class="title">I'm Henry Okafor</h1>
         <h5 class="sub-title">UI/UX PRODUCT DESIGNER, Lagos Nigeria</h5>
         <p class="excerpt">
-          I’m a visually driven creative with a keen eye for details in graphics design,
-          UI design and digital product design, with more than three(3) active years
-          of working experience as a UIUX team member for one of the leading
-          Fintech company in Nigeria. I’m readily available to build cutting edge
-          human centered digital products with you.
+          {{bio}}
         </p>
         <div class="actions">
           <a
@@ -45,7 +41,8 @@
 
 <script>
 import Logo from "~/components/Logo.vue";
-
+import {bio} from "~/package.json"
+// const pkg = {}
 export default {
   components: {
     Logo
@@ -56,11 +53,11 @@ export default {
       {
         name: "description",
         hid: "description",
-        content:
-          "I’m a visually driven creative with a keen eye for details in graphics design, UI design and digital product design, with more than three(3) active years of working experience"
+        content: bio.substr(0,150)
       }
     ]
-  })
+  }),
+  data:() => ({bio})
 };
 </script>
 
