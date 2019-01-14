@@ -48,7 +48,7 @@ export default {
     Logo
   },
   head: () => ({
-    title: "Henry Okafor - Graphics designer",
+    title: "Henry Okafor - UIUX/Product designer",
     meta: [
       {
         name: "description",
