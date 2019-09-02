@@ -7,7 +7,7 @@
           <object data="/logo.svg" type="image/svg+xml"></object>
         </div>
         <h1 class="title">I'm Henry Okafor</h1>
-        <h5 class="sub-title">UI/UX PRODUCT DESIGNER, Lagos Nigeria</h5>
+        <h5 class="sub-title">PRODUCT DESIGNER, Lagos Nigeria</h5>
         <p class="excerpt">
           {{bio}}
         </p>
@@ -34,7 +34,7 @@
       </div>
     </div>
     <div class="toc">
-      <nuxt-link to="terms-and-conditions">Terms and Conditions</nuxt-link>
+      <!-- <nuxt-link to="terms-and-conditions">Terms and Conditions</nuxt-link> -->
     </div>
   </section>
 </template>

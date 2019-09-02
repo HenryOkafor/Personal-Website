@@ -16,7 +16,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' },
-      {rel:'stylesheet', crossorigin: 'anonymous',href: "https://use.fontawesome.com/releases/v5.6.3/css/all.css", integrity: "sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" }
+      {rel:'stylesheet', crossorigin: 'anonymous',href: "https://use.fontawesome.com/releases/v5.6.3/css/all.css", integrity: "sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" },
+      {rel:'stylesheet', crossorigin: 'anonymous',href: "https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" }
     ]
   },
 
