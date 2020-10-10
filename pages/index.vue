@@ -159,8 +159,8 @@ export default {
     imgUrl: require("~/assets/img/Henry-Image.jpg"),
     imgLoaded: false,
     portfolios: [
-      { name: "Previous Portfolio", link: "https://drive.google.com/open?id=1D2NuiBy3AkKH3alKkS-BzxQ6QhsERY9h" },
-      { name: "Current Portfolio", link: "https://drive.google.com/open?id=1ayseTYZA3gKmpV4m7-xBisVBvLEd2z_y" }
+      { name: "Web Design Portfolio", link: "https://drive.google.com/file/d/1C-i4kiPsbosdPJNpfI85TLeOFXZTzRyo/view?usp=sharing" },
+      { name: "Mobile Design Portfolio", link: "https://drive.google.com/file/d/1eSvpzsWTgBt_ssKOHSOQAo2_P0DFWVu7/view?usp=sharing" }
     ]
   }),
   mounted() {
@@ -352,6 +352,7 @@ export default {
       .content {
         padding: 0 20px 100px;
         color: white;
+        background: linear-gradient(0deg, rgba(0,0,0,90%) 50%, transparent);
         .title {
           font-size: 2em;
           color: white;
